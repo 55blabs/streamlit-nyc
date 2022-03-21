@@ -6,7 +6,7 @@ import pydeck as pdk
 
 DATE_TIME = "date/time"
 DATA_URL = (
-    "/Users/michaelmcnair/Desktop/streamlit-nyc" #"/home/cicada/Downloads/rhyme/streamlit/Motor_Vehicle_Collisions_-_Crashes.csv
+    "/Users/michaelmcnair/Desktop/streamlit-nyc/Motor_Vehicle_Collisions_-_Crashes.csv" #"/home/cicada/Downloads/rhyme/streamlit/Motor_Vehicle_Collisions_-_Crashes.csv
 )
 
 st.title("Motor Vehicle Collisions in New York City")
