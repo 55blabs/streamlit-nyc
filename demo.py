@@ -6,7 +6,7 @@ import plotly.express as px
 
 DATE_TIME = "date/time"
 DATA_URL = (
-    "Motor_Vehicle_Collisions_-_Crashes.csv" #"/home/cicada/Downloads/rhyme/streamlit/Motor_Vehicle_Collisions_-_Crashes.csv
+    "/Users/michaelmcnair/Desktop/streamlit-nyc" #"/home/cicada/Downloads/rhyme/streamlit/Motor_Vehicle_Collisions_-_Crashes.csv
 )
 
 st.title("Motor Vehicle Collisions in New York City")
@@ -21,7 +21,6 @@ def load_data(nrows):
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis="columns", inplace=True)
     data.rename(columns={"crash_date_crash_time": "date/time"}, inplace=True)
-    #data = data[['date/time', 'latitude', 'longitude']]
     return data
 
 data = load_data(100000)
